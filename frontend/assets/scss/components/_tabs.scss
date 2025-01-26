@@ -1,0 +1,15 @@
+/*============================================= Nav Tabs Css Start =============================================*/
+.tab-style-gradient button[aria-selected="true"] {
+  background: linear-gradient(180deg, rgba(72, 127, 255, 0.12) 0%, rgba(72, 127, 255, 0.03) 100%);
+}
+.tab-style-button button[aria-selected="true"] {
+  @apply bg-primary-600 text-white hover:text-white;
+}
+
+.style-pill-focus li button[aria-selected="true"] {
+  @apply bg-primary-50 text-primary-600;
+}
+.style-pill-button li button[aria-selected="true"] {
+  @apply bg-primary-600 text-white border-primary-600 dark:hover:text-white;
+}
+/*============================================= Nav Tabs Css End =============================================*/

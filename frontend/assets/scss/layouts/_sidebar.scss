@@ -1,0 +1,196 @@
+/* === sidebar css start === */
+.sidebar {
+  @apply fixed start-[-105%] xl:start-0 top-0 w-[250px] xl:w-[220px] 2xl:w-[275px] 3xl:w-[312px] h-screen bg-white z-30 dark:bg-dark-2;
+}
+
+.sidebar-close-btn {
+  @apply absolute top-0 end-[0.625rem] w-[1.75rem] h-[1.75rem] border border-neutral-300 rounded-full inline-flex justify-center items-center xl:hidden;
+}
+
+.sidebar.sidebar-open { 
+  @apply start-0;
+}
+
+.sidebar.active {
+  @apply w-auto xl:hover:start-0 2xl:hover:w-[17.1875rem] 3xl:hover:w-[19.5rem];
+}
+
+.sidebar.active:hover .sidebar-logo img.light-logo {
+  @apply inline-block;
+}
+
+.dark .sidebar.active:hover .sidebar-logo img.light-logo {
+  @apply hidden;
+}
+
+.dark .sidebar.active:hover .sidebar-logo img.dark-logo {
+  @apply inline-block;
+}
+
+.sidebar.active:hover .sidebar-logo img.logo-icon {
+  @apply hidden;
+}
+
+.sidebar.active:hover .sidebar-menu li a span {
+  @apply inline-block;
+}
+
+.sidebar.active:hover .sidebar-menu li a .menu-icon {
+  @apply me-1;
+}
+
+.sidebar.active:hover .sidebar-menu li.dropdown.dropdown-open .sidebar-submenu, .sidebar.active:hover .sidebar-menu li.dropdown.open .sidebar-submenu {
+  @apply block;
+}
+
+.sidebar.active:hover .sidebar-menu li.sidebar-menu-group-title {
+  @apply inline-block;
+}
+
+.sidebar.active:hover .sidebar-menu li.dropdown a::after {
+  @apply inline-block;
+}
+
+.sidebar.active .sidebar-logo img.light-logo, .sidebar.active .sidebar-logo img.dark-logo {
+  @apply hidden;
+}
+
+.sidebar.active .sidebar-logo img.logo-icon {
+  @apply inline-block;
+}
+
+.sidebar.active .sidebar-menu li a span {
+  @apply hidden;
+}
+
+.sidebar.active .sidebar-menu li a .menu-icon {
+  @apply me-0;
+}
+
+.sidebar.active .sidebar-menu li.sidebar-menu-group-title {
+  @apply hidden;
+}
+
+.sidebar.active .sidebar-menu li.dropdown.dropdown-open .sidebar-submenu, .sidebar.active .sidebar-menu li.dropdown.open .sidebar-submenu {
+  @apply hidden;
+}
+
+.sidebar.active .sidebar-menu li.dropdown a::after {
+  @apply hidden;
+}
+
+.sidebar-logo {
+  @apply h-[72px] px-[16px] py-[14px] border-e border-b border-neutral-200 flex items-center justify-start dark:border-neutral-700;
+}
+
+.sidebar-logo img {
+  @apply max-h-[3.4375rem];
+}
+
+.sidebar-logo img.dark-logo {
+  @apply hidden;
+}
+
+.dark .sidebar-logo img.light-logo {
+  @apply hidden;
+}
+
+.dark .sidebar-logo img.dark-logo {
+  @apply block;
+}
+
+.sidebar-logo img.logo-icon {
+  @apply hidden;
+}
+
+.sidebar-menu-area {
+  @apply h-[calc(100vh-72px)] px-[1rem] py-[0.75rem] overflow-y-scroll border-e border-neutral-200 dark:border-neutral-700;
+}
+
+.sidebar-menu-area:hover::-webkit-scrollbar-thumb {
+  @apply bg-neutral-200 ;
+}
+
+.sidebar-menu-area::-webkit-scrollbar {
+  @apply w-1.5 bg-white;
+}
+
+.sidebar-menu-area::-webkit-scrollbar-thumb {
+  @apply bg-white;
+}
+
+.dark .sidebar-menu-area::-webkit-scrollbar {
+  @apply bg-dark-2;
+}
+.dark .sidebar-menu-area::-webkit-scrollbar-thumb {
+  @apply bg-dark-2;
+}
+
+.dark .sidebar-menu-area:hover::-webkit-scrollbar-thumb {
+  @apply bg-neutral-700;
+}
+
+.sidebar-menu li.dropdown > a {
+  @apply relative after:absolute after:content-["\ea6e"] after:font-[remixicon] after:top-1/2 after:end-[0.75rem] after:-translate-y-1/2 after:text-[1.125rem] 3xl:after:text-[1.375rem] after:transition dark:after:text-neutral-300;
+}
+
+.sidebar-menu li.dropdown.open > a, .sidebar-menu li.dropdown.dropdown-open > a {
+  @apply bg-primary-600 text-white;
+}
+
+.sidebar-menu li.dropdown.open > a:hover, .sidebar-menu li.dropdown.dropdown-open > a:hover {
+  @apply text-white;
+}
+
+.sidebar-menu li.dropdown.open > a::after, .sidebar-menu li.dropdown.dropdown-open > a::after {
+  @apply -translate-y-1/2 rotate-90;
+}
+
+.sidebar-menu li.dropdown.open .sidebar-submenu {
+  @apply block;
+}
+
+.sidebar-menu li > a.active-page {
+  @apply bg-primary-600 text-white;
+}
+
+.sidebar-menu li > a.active-page:hover {
+  @apply text-white;
+}
+
+.sidebar-menu li a {
+  @apply px-[0.75rem] py-[0.625rem] font-medium flex items-center text-neutral-600 transition rounded-lg text-[0.875rem] 3xl:text-[1rem];
+}
+
+.sidebar-menu li a:hover {
+  @apply text-primary-600;
+}
+
+.sidebar-menu li a .menu-icon {
+  @apply text-[1.125rem] 3xl:text-[1.375rem] me-[0.5rem] 3xl:me-[0.75rem] dark:text-neutral-300;
+}
+
+.sidebar-menu li a i {
+  @apply leading-[1.2] w-[24px] text-[1.375rem];
+}
+
+.sidebar-menu li a .circle-icon {
+  @apply text-[0.625rem];
+}
+
+.sidebar-menu .sidebar-submenu {
+  @apply pt-[0.75rem] hidden ps-[1.5rem] 3xl:ps-[2.75rem] transition-none ;
+}
+
+.sidebar-menu .sidebar-submenu li.active-page a {
+  @apply bg-primary-50 text-neutral-900 dark:bg-neutral-600;
+}
+
+.sidebar-menu .sidebar-submenu li a {
+  @apply px-[0.75rem] py-[0.4375rem] dark:text-neutral-200;
+}
+
+.sidebar-menu .sidebar-menu-group-title {
+  @apply text-neutral-500 font-semibold my-[8px] text-[0.875rem] 3xl:text-[1rem] dark:text-neutral-400;
+}
+/* === sidebar css end === */

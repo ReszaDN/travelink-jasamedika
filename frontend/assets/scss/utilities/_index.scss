@@ -1,0 +1,22 @@
+span, a {
+    @apply inline-block;
+}
+
+.animated-bar {
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes animateBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@import "./bg"; 
+@import "./typography"; 

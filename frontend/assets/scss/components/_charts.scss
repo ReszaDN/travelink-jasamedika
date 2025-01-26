@@ -1,0 +1,89 @@
+/*============================================= Apex Chart Css Start =============================================*/
+.apexcharts-tooltip.apexcharts-theme-light {
+    @apply bg-white dark:bg-neutral-600 border-neutral-300 dark:border-neutral-500;
+    .apexcharts-tooltip-title {
+        @apply bg-neutral-600 dark:bg-neutral-500 border-b-[1px] border-neutral-300 dark:border-neutral-400;
+    }
+}
+
+.apexcharts-text.apexcharts-yaxis-label, .apexcharts-text.apexcharts-xaxis-label {
+    @apply fill-neutral-600 dark:fill-white;
+}
+
+.apexcharts-yaxis {
+    @apply translate-x-[10px];
+}
+
+/* Square Chart Start */
+.remove-tooltip-title {
+    .apexcharts-tooltip-title {
+        @apply hidden;
+    }
+}
+.rounded-tooltip-value {
+    .apexcharts-tooltip.apexcharts-theme-light {
+        @apply w-11 h-11 flex items-center justify-center flex-col;
+    }
+    .apexcharts-tooltip-text-y-label {
+        @apply hidden;
+    }
+    
+    .apexcharts-tooltip-marker {
+        @apply hidden;
+    }
+    .apexcharts-tooltip-text-y-value {
+        @apply ms-0;
+    }
+  
+    .apexcharts-tooltip-text {
+        @apply flex;
+    }
+  }
+  .apexcharts-legend-text {
+    @apply text-neutral-600 dark:text-white;
+  }
+/* Square Chart End */
+
+
+
+/* Home Two Donut Chart Css Start*/
+.apexcharts-tooltip-z-none {
+    .apexcharts-tooltip-z-group {
+        @apply hidden;
+    }
+}
+
+.title-style {
+    .apexcharts-text.apexcharts-datalabel-value {
+        @apply hidden;
+    }
+    .apexcharts-text.apexcharts-datalabel-label {
+        @apply fill-neutral-600 text-sm font-bold;
+    }
+}
+
+.circle-none {
+    circle {
+        @apply hidden;
+    }
+}
+
+#donutChart {
+    @apply h-0 min-h-[163px] -mt-[32px];
+}
+#donutChart {
+    min-height: 163px !important;
+}
+
+.margin-16-minus {
+    @apply -m-[16px];
+}
+    /* Home Two Donut Chart Css End*/
+
+    /* Home Five Radial Chart Css End*/
+#semiCircleGauge {
+    transform: translateY(22px) translateX(14px);
+}
+
+/* Home Five Radial Chart Css End*/
+/*============================================= Apex Chart Css End =============================================*/

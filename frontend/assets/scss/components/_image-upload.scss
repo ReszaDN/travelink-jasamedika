@@ -1,0 +1,36 @@
+/* ========================= Image upload csss start ================================= */
+/* Upload Image Css Start */
+  .avatar-upload {
+    @apply relative max-w-fit; 
+    &.style-two {
+        @apply w-[180px] h-[150px] max-w-none;
+    }
+  }
+
+  #imagePreview {
+    @apply bg-cover bg-no-repeat bg-center ;
+    background-image: url('../images/user-grid/user-grid-img13.png');
+  }
+  
+  #previewImage1, #previewImage2 {
+    @apply bg-cover bg-no-repeat bg-center ;
+    background-image: url('../images/payment/upload-image.png');
+  }
+  
+
+  .avatar-upload .avatar-preview {
+    @apply w-[150px] h-[150px] relative rounded-full border border-primary-600 shadow-md;
+    &.style-two {
+        @apply w-[120px] h-[120px] rounded-lg border border-neutral-300 shadow-none;
+      > div {
+        @apply rounded-[inherit];
+      }
+    }
+  }
+  .avatar-upload .avatar-preview > div {
+    @apply w-full h-full rounded-full bg-cover bg-no-repeat bg-center;
+    background-image: url('');
+  }
+  
+/* Upload Image Css End */
+/* ========================= Image upload csss End ================================= */

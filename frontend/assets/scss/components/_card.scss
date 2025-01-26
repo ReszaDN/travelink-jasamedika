@@ -1,0 +1,15 @@
+
+.card-header {
+  @apply border-b border-neutral-200 dark:border-neutral-600 px-4 md:px-6 py-3;
+}
+.card {
+  @apply bg-white dark:bg-dark-2 rounded-lg border border-neutral-600;
+}
+
+.card-body {
+  @apply px-6 py-5;
+}
+
+select {
+  @apply rounded border-neutral-300 dark:border-neutral-600; 
+}

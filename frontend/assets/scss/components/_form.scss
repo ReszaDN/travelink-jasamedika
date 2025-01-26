@@ -1,0 +1,43 @@
+    
+    /*============================================= Form Css Start =============================================*/
+    .form-check-input {
+        @apply  border-neutral-400 rounded dark:bg-neutral-600;
+    }
+    .form-control {
+        @apply border-neutral-300 dark:border-neutral-500 rounded-lg bg-white dark:bg-transparent px-5 py-2.5 w-full;
+        &[readonly] {
+            @apply bg-neutral-100 border-neutral-300 dark:bg-neutral-800 dark:border-neutral-600;
+        }
+    }
+
+    .form-label {
+        @apply text-sm font-semibold text-neutral-600 inline-block mb-2 dark:text-neutral-200;
+    }
+
+    .form-select {
+        @apply border-neutral-300 dark:border-neutral-500 rounded-lg bg-white dark:bg-transparent px-5 py-2.5 w-full;
+        &.form-select-sm {
+          @apply ps-3 pe-5 py-1.5 text-sm;
+        }
+    }
+
+    .icon-field {
+        @apply relative;
+        .icon {
+            @apply absolute top-3 start-0 w-10 flex justify-center items-center text-[20px];
+        }
+        .form-control {
+            @apply ps-10;
+          &.form-control-lg {
+            ~ .icon {
+              @apply top-[18px];
+            }
+          }
+          &.form-control-sm {
+            ~ .icon {
+              @apply top-[10px];
+            }
+          }
+        }
+      }
+    /*============================================= Form Css End =============================================*/

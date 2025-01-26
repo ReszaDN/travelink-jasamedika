@@ -1,0 +1,122 @@
+/* ========================= Wizard Css Start ========================= */
+.form-wizard {
+    .wizard-fieldset {
+        @apply hidden;
+        &.show {
+            display: block !important;
+        }
+    }
+    .wizard-form-error {
+        @apply hidden bg-transparent absolute start-0 top-0 h-full w-full rounded-md border border-danger-600 pointer-events-none;
+    }
+    &-header {
+        @apply text-center; 
+    }
+    &-list {
+        @apply flex items-center justify-between min-w-[455px];
+        &__item {
+            @apply w-[20%];
+            &.active {
+                .count {
+                    @apply text-primary-600 border border-primary-600 font-bold;
+                }
+                .text {
+                    @apply text-primary-600;
+                }
+            }
+            &.activated {
+                .count {
+                    @apply bg-primary-600 border border-primary-600 text-white dark:bg-neutral-700;
+                }
+                .text {
+                    @apply text-primary-600;
+                }
+                .form-wizard-list__line {
+                    &::before {
+                        @apply w-full;
+                    }
+                }
+            }
+            &:last-child {
+                .form-wizard-list__line {
+                    &::after, &::before {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+        &__line {
+            @apply relative after:bg-neutral-300 before:bg-primary-600 after:h-0.5 after:start-1/2 after:absolute after:end-0 after:top-1/2 after:-translate-y-1/2 after:w-full after:transition-all before:h-0.5 before:start-1/2 before:absolute before:end-0 before:top-1/2 before:-translate-y-1/2 before:w-0 before:transition-all before:z-[1];
+        }
+        .count {
+            @apply bg-white dark:bg-neutral-700 rounded-full inline-block h-10 leading-10 w-10 relative text-center z-[1] border border-2 border-neutral-300 text-lg;
+        }
+    }
+}
+
+/* Style Two */
+.form-wizard-list{
+    &.style-two  {
+        @apply gap-2 min-w-max ;
+        .form-wizard-list {
+            .count {
+                @apply h-8 leading-8 w-8 text-base;
+            }
+            &__line {
+                @apply before:hidden after:hidden;
+            }
+            &__item {
+                @apply w-[25%] flex items-center gap-2 text-start p-2 relative bg-neutral-200 dark:bg-neutral-600 rounded-full first:ps-2 last:pe-2;
+                clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+
+                &.active {
+                    .count {
+                        @apply bg-primary-600 text-white;
+                    }
+                }
+                &.activated {
+                    @apply bg-primary-600;
+                    .count {
+                        @apply bg-white text-primary-600;
+                    }
+                    .text {
+                        @apply text-white;
+                    }
+                }
+                .text {
+                    @apply text-[13px] font-bold;
+                    // font-size: 13px !important;
+                    // font-weight: 700 !important;
+                }
+                
+            }
+        }
+    }
+}
+
+/* Style Three */
+.form-wizard-list{
+    &.style-three  {
+        @apply min-w-max;
+        .form-wizard-list {
+            &__line {
+                @apply before:hidden after:hidden;
+            }
+        }
+    }
+}
+
+
+
+
+.form-wizard {
+    input::placeholder {
+        @apply text-sm text-neutral-400;
+        // font-size: 14px !important;
+    }
+}
+
+.gif-image {
+    @apply max-w-[60px];
+}
+/* ========================= Wizard Css End ========================= */

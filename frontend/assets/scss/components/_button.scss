@@ -1,0 +1,12 @@
+/*============================================= Button Css Start =============================================*/
+.btn {
+    @apply rounded-lg py-3 px-6 inline-flex transition;
+}
+.btn-primary-600, .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+}
+
+.btn-outline-primary, .btn-outline-primary-600 {
+    @apply border border-primary-600 text-primary-600 hover:text-white hover:bg-primary-600;
+}
+/*============================================= Button Css End =============================================*/

@@ -1,0 +1,40 @@
+ /*============================================= Slider Dots Css Start =============================================*/
+ .slick-dots {
+    @apply flex justify-center items-center gap-1 mt-6;
+    li {
+        @apply flex;
+    }
+    button {
+        @apply bg-primary-50 dark:bg-primary-600/25 w-2.5 h-1 -indent-[99999px] rounded-full text-primary-50;
+    }
+    .slick-active button {
+        @apply bg-primary-600 w-5 transition dark:bg-primary-500;
+    }
+
+}
+.slick-dots-style-two {
+    &.absolute-dots {
+        .slick-dots {
+            @apply mt-0 absolute bottom-0 start-1/2 -translate-x-1/2 mb-8 gap-2;
+        }
+    }
+    .slick-dots {
+        @apply mt-10 mb-0 gap-2;
+        button {
+            @apply bg-primary-600/75 dark:bg-primary-600/25 w-2 h-2 -indent-[99999px] rounded-full;
+        }
+        .slick-active button {
+            @apply bg-primary-600 scale-[1.5] dark:bg-primary-600;
+        }
+    }
+}
+.slider-progress {
+    @apply absolute left-0 top-0 w-full h-[5px];
+    span {
+        @apply absolute left-0 top-0 block w-0 h-full bg-primary-600 transition-all duration-150 ease-in-out;
+        &.active {
+            @apply w-full duration-[4000ms];
+        }
+    }
+}
+/*============================================= Slider Dots Css End =============================================*/

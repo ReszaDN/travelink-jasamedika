@@ -1,0 +1,92 @@
+/* Full Calendar Customize Css Start */
+.fc-border-separate tr.fc-last th {
+    @apply bg-neutral-50 dark:bg-neutral-600 p-3 text-neutral-900;
+    a {
+      @apply transition-[0];
+    }
+  }
+  
+  .fc-day.fc-tue.fc-widget-content.fc-today.fc-state-highlight {
+    @apply bg-neutral-50 p-3 text-neutral-50 relative;
+  }
+  
+  .fc-event {
+    @apply border-0 p-1 rounded bg-primary-50 text-primary-600; 
+    &.important {
+        @apply bg-danger-100 text-danger-600; 
+    }
+    &.info {
+        @apply bg-purple-100 text-purple-600; 
+    }
+  }
+  .fc-border-separate tr.fc-last th {
+    @apply border border-neutral-200 dark:border-neutral-500 dark:text-white;
+  }
+  
+  table.fc-header, #calendar {
+    @apply bg-transparent;
+  }
+  .fc-week .fc-day:hover .fc-day-number {
+    @apply bg-primary-100 text-primary-600;
+  }
+  
+  .fc-state-highlight>div>div.fc-day-number {
+    @apply bg-primary-600 text-white;
+  }
+  
+  #calendar, table.fc-header {
+    @apply bg-transparent;
+  }
+  .fc-header-title h2 {
+    @apply text-2xl font-semibold;
+  }
+  .fc-state-default {
+    @apply border-primary-600 text-primary-600 hover:bg-primary-50;
+  }
+  
+  .fc-state-active, .fc-state-down {
+    @apply bg-primary-600 text-white hover:text-white hover:bg-primary-600; 
+  }
+  
+  .fc-button.fc-button-today {
+    @apply border border-primary-50 bg-primary-50 text-primary-600;
+    &.fc-state-disabled {
+        @apply border border-primary-600 bg-primary-600 text-white cursor-no-drop;
+    }
+  }
+  
+  td.fc-header-center {
+    @apply text-end;
+  }
+  .fc-widget-content {
+    @apply border border-neutral-200 dark:border-neutral-600;
+  }
+  .fc-last  td {
+    @apply border-[1px] border-e-0;
+  }
+  
+  .fc-agenda-axis.fc-widget-header {
+    @apply text-neutral-900 border border-neutral-200 dark:border-neutral-600;
+  }
+  .fc-header td {
+    @apply p-0;
+  }
+  
+  #calendar {
+    @apply overflow-x-auto;
+    .fc-content { 
+      @apply min-w-max;
+    }
+    table.fc-header tr {
+        @apply flex items-center gap-4 justify-between; 
+    }
+  }
+  .fc-day.fc-mon.fc-widget-content.fc-today.fc-state-highlight.fc-first {
+    @apply text-white;
+}
+
+.fc-week .fc-day.fc-state-highlight:hover .fc-day-number {
+    @apply bg-primary-700 text-white;
+}
+  /* Full Calendar Customize Css End */
+  

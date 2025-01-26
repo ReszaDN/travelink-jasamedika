@@ -1,0 +1,15 @@
+/* === dashboard body css start === */
+.dashboard-main {
+  @apply ms-0 xl:ms-[13.75rem] 2xl:ms-[17.1875rem] 3xl:ms-[19.5rem] flex flex-wrap flex-col min-h-screen transition;
+}
+
+.dashboard-main-body {
+  padding: 0.9375rem;
+  @apply p-[0.9375rem] 2xl:p-[1.5rem];
+}
+
+.dashboard-main.active {
+  @apply ms-[5.375rem];
+}
+
+/* === dashboard body css end === */

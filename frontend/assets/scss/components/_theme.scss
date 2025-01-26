@@ -1,0 +1,11 @@
+.theme-setting-input {
+  @apply absolute top-0 left-0 opacity-0;
+  &:checked {
+    ~ .theme-setting-label {
+      @apply border-primary-600 shadow-md;
+        .text-secondary-light {
+            @apply text-neutral-900 #{!important};
+        }
+    }
+  }
+}

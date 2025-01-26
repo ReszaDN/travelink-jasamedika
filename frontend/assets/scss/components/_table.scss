@@ -1,0 +1,58 @@
+/*============================================= Table Css Start =============================================*/
+.table-responsive {
+  @apply overflow-x-auto;
+}
+.table {
+  @apply w-full min-w-max rounded-lg border-spacing-0 border-separate border border-neutral-200 dark:border-neutral-600;
+}
+
+.table {
+  @apply border border-neutral-200 rounded-lg;
+  th {
+      @apply px-4 py-3 bg-neutral-100 dark:bg-neutral-800 first:rounded-tl-lg last:rounded-tr-lg font-medium text-center first:text-start;
+  }
+  td {
+      @apply px-4 py-3 text-center first:text-start border-b-[1px] border-neutral-200 dark:border-neutral-600;
+  }
+
+  tr {
+      &:last-child {
+          td {
+              @apply border-b-0;
+              &:first-child {
+                  @apply rounded-bl-lg;
+              }
+              &:last-child {
+                  @apply rounded-br-lg;
+              }
+          }
+      }
+  }
+
+  &.style-two {
+      td {
+          @apply py-6;
+      }
+  }
+  &.style-three {
+      td {
+          @apply py-4;
+      }
+  }
+}
+
+/* DataTables Css */
+.datatable-wrapper .datatable-table thead th .datatable-sorter:hover, .datatable-wrapper .datatable-table thead th.datatable-ascending .datatable-sorter, .datatable-wrapper .datatable-table thead th.datatable-descending .datatable-sorter {
+    @apply text-primary-600 dark:text-primary-500;
+}
+.datatable-wrapper .datatable-table thead th, .datatable-wrapper .datatable-table tbody th, .datatable-wrapper .datatable-table tbody td {
+    @apply dark:text-white;
+}
+
+.dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item-link {
+    @apply border-neutral-600;
+}
+.dark .datatable-wrapper .datatable-bottom .datatable-pagination .datatable-pagination-list-item:first-of-type .datatable-pagination-list-item-link {
+    @apply border-s border-neutral-600;
+}
+/*============================================= Table Css End =============================================*/

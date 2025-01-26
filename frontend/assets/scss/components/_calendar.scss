@@ -1,0 +1,16 @@
+.flatpickr-calendar {
+  @apply dark:bg-dark-2;
+}
+
+.flatpickr-am-pm,
+.flatpickr-time input,
+.numInputWrapper span,
+.flatpickr-time .flatpickr-time-separator,
+.flatpickr-current-month {
+  @apply dark:text-white;
+}
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  @apply dark:fill-white;
+}

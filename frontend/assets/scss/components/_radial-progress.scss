@@ -1,0 +1,28 @@
+svg.radial-progress {
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(-90deg);
+  }
+  
+  svg.radial-progress circle.incomplete {
+    fill: none;
+    stroke: #e5e7eb; /* Light gray for incomplete track */
+    stroke-width: 6;
+  }
+  
+  svg.radial-progress circle.complete {
+    fill: none;
+    stroke: #3b82f6; /* Primary color for completed track */
+    stroke-width: 6;
+    stroke-dasharray: 219.911; /* Circumference for a radius of 35 */
+    stroke-dashoffset: 219.911;
+    transition: stroke-dashoffset 1.25s ease-out;
+  }
+  
+  svg.radial-progress text.percentage {
+    font-size: 1.5rem;
+    fill: #3b82f6; /* Primary color for text */
+    text-anchor: middle;
+    alignment-baseline: middle;
+  }
+  

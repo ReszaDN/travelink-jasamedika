@@ -1,0 +1,8 @@
+.accordion-item {
+    [aria-expanded="true"] {
+        @apply text-primary-600;
+        i::before {
+            content: "\F1AF";
+        }
+    }
+}
